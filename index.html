@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+<style>
+    .row {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto;  
+    }
+    .row::after {
+      content: "";
+      display: block;
+      clear: left;
+    }
+    .column {
+      float: left;
+      width: 20%;
+      box-sizing: border-box;
+      padding: 8px 8px 40px 8px; 
+    }
+    .box {
+      height: 110px;
+      background-color: rgb(0, 140, 255);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; 
+      background-position: center;     
+    }
+    #tile {
+     background-image: url("placeholder-image.png");  
+     background-size: contain;
+     background-repeat: no-repeat;
+    }
+    p {
+        clear: left;
+    }
+
+  @media screen and (max-width: 1024px) {
+    .column {
+          width: 33.33%;
+      }
+  }
+  @media screen and (max-width: 768px) {
+    .column {
+          width: 50%;
+      }   
+  }
+  @media screen and (max-width: 414px) {
+    .column {
+        width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>    
+    <div class="row">
+        <h1>Gallery heading</h1>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>    
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div>    
+        <div class="column">
+            <div class="box" id="tile"></div>
+        </div> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel scelerisque ex. Nam convallis enim sed nibh aliquam varius. Quisque pharetra magna erat, at vulputate augue rutrum id. Duis euismod porttitor odio, quis facilisis leo. Nulla facilisis laoreet nunc et ornare. Fusce tincidunt urna a dui lacinia porttitor. Sed id congue augue. Suspendisse nisl mi, porta et tristique id, laoreet sed magna. Sed turpis ligula, feugiat vel sodales elementum, lacinia at neque. Aenean ac dictum felis, eget lobortis eros. Praesent maximus molestie velit et molestie. Aenean porttitor augue enim, ac volutpat arcu vestibulum quis. Nulla accumsan eros eu elit sagittis elementum.</p>
+    </div>
+</body>
+</html>
